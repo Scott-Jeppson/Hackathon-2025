@@ -4,7 +4,7 @@ p {color: white;}
 
 /* Header style */
 .header {
-  background-color:darkslategrey;
+  background-color:#643b18;
   padding: 20px;
   color: white;
   text-align: center;
@@ -65,7 +65,7 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: darkslategrey;
+  background-color: #643b18;
   padding: 20px;
 }
 
@@ -95,7 +95,7 @@ div {padding: 8px}
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: darkslategrey;
+  color: #643b18;
 }
 
 * {
@@ -109,7 +109,7 @@ body {
 /* Topnav style */
 .topnav {
   overflow: hidden;
-  background-color:darkslategrey;
+  background-color:#643b18;
 }
 
 /* Topnav link style */
@@ -125,17 +125,17 @@ body {
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: darkslategrey;
+  color: #643b18;
 }
 
 /* navbar stuff */
 .navbar {
-  background-color: darkslategrey;
+  background-color: #643b18;
   overflow: hidden;
   position: sticky;
   bottom: 0;
   width: 100%;
-  border: 5px double white;
+  border: 5px double black;
 }
 
 /* navbar a link style */
@@ -152,13 +152,13 @@ body {
 /* navbar a link color hover */
 .navbar a:hover {
   background-color: #ddd;
-  color: darkslategrey;
+  color: #643b18;
 }
 
 /* navbar a link active color */
 .navbar a.active {
   background-color: white;
-  color: darkslategrey;
+  color: #643b18;
 }
 
 /* Three equal columns */
@@ -205,7 +205,7 @@ p.mix {border-style: dotted dashed solid double;}
 
 /* image stuff */
 img {
-  border: 5px double MediumSeaGreen;
+  border: 5px double black;
 }
 
 /* figcaption stuff */
