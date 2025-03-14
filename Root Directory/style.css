@@ -1,4 +1,4 @@
-body {background-color: darkgreen;}
+body {background-color: #056839;}
 h2 {color: white; text-align: center;}
 p {color: white;}
 
@@ -52,7 +52,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: white;
-  color: darkgreen;
+  color: #056839
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -109,7 +109,7 @@ body {
 /* Topnav style */
 .topnav {
   overflow: hidden;
-  background-color:darkolivegreen;
+  background-color:darkslategrey;
 }
 
 /* Topnav link style */
@@ -135,7 +135,7 @@ body {
   position: sticky;
   bottom: 0;
   width: 100%;
-  border: 5px double darkolivegreen;
+  border: 5px double white;
 }
 
 /* navbar a link style */
@@ -205,10 +205,11 @@ p.mix {border-style: dotted dashed solid double;}
 
 /* image stuff */
 img {
-  border: 5px double darkslategrey;
+  border: 5px double MediumSeaGreen;
 }
 
 /* figcaption stuff */
 figure figcaption {
   text-align: center;
 }
+
