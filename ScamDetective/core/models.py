@@ -11,7 +11,7 @@ class Keyword(models.Model):
     def compare(self, text):
         return self.body in text
 
-class CountryCodes(models.Model):
+class CountryCode(models.Model):
     id = models.AutoField(primary_key=True)
     country = models.CharField(max_length=100)
     code = models.CharField(max_length=10)
@@ -19,3 +19,8 @@ class CountryCodes(models.Model):
     def __str__(self):
         return self.country
 
+class Admin(models.Model):
+    id = models.AutoField(primary_key=True)
+    username = models.CharField(max_length=100)
+    passwordHash = models.CharField(max_length=100)
+    salt = models.CharField(max_length=100)
