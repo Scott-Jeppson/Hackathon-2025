@@ -4,224 +4,8 @@
   {% load static %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {background-color: #056839;}
-    h2 {color: white; text-align: center;}
-    p {color: white;}
-
-    /* Header style */
-    .header {
-      background-color:#643b18;
-      padding: 20px;
-      color: white;
-      text-align: center;
-      font-family: Verdana;
-      font-size: 20px;
-    }
-
-    /* table stuff */
-    table {
-      font-family: arial, sans-serif, 'Times New Roman', Times, serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    * {
-      box-sizing: border-box;
-    }
-
-    /* more table stuff */
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-
-    tr:nth-child(odd) {
-      color: #dddddd;
-    }
-
-    input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-    }
-
-    /* contact page stuff */
-
-    input[type=submit] {
-      background-color: white;
-      color: #056839;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-      background-color: darkolivegreen;
-    }
-
-    .container {
-      border-radius: 5px;
-      background-color: #643b18;
-      padding: 20px;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    /* div stuff which doesn't seem to work */
-    div {padding: 8px}
-
-    /* Style the top navigation bar */
-    .topnav {
-      overflow: hidden;
-      background-color: darkolivegreen;
-    }
-
-    /* Style the topnav links */
-    .topnav a {
-      float: none;
-      display: inline-block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      font-size: 30px;
-    }
-
-    /* Change color on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: #643b18;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    /* Topnav style */
-    .topnav {
-      overflow: hidden;
-      background-color:#643b18;
-    }
-
-    /* Topnav link style */
-    .topnav a {
-      float: none;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      font-size: 30px;
-    }
-
-    /* Change color on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: #643b18;
-    }
-
-    /* navbar stuff */
-    .navbar {
-      background-color: #643b18;
-      overflow: hidden;
-      position: sticky;
-      bottom: 0;
-      width: 100%;
-      border: 5px double black;
-    }
-
-    /* navbar a link style */
-    .navbar a {
-      float: none;
-      display: block;
-      color: white;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      padding: 14px 16px;
-      font-size: 30px;
-    }
-
-    /* navbar a link color hover */
-    .navbar a:hover {
-      background-color: #ddd;
-      color: #643b18;
-    }
-
-    /* navbar a link active color */
-    .navbar a.active {
-      background-color: white;
-      color: #643b18;
-    }
-
-    /* Three equal columns */
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 15px;
-    }
-
-    /* Clear floats after columns */
-    .row::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Responsive */
-    @media screen and (max-width:600px) {
-      .column {
-        width: 100%;
-      }
-    }
-
-    /*image stuff*/
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 8px;
-    }
-
-    /* border stuff*/
-    p.dotted {border-style: dotted;}
-    p.dashed {border-style: dashed;}
-    p.solid {border-style: solid;}
-    p.double {border-style: double;}
-    p.groove {border-style: groove;}
-    p.ridge {border-style: ridge;}
-    p.inset {border-style: inset;}
-    p.outset {border-style: outset;}
-    p.none {border-style: none;}
-    p.hidden {border-style: hidden;}
-    p.mix {border-style: dotted dashed solid double;}
-
-    /* image stuff */
-    img {
-      border: 5px double black;
-    }
-
-    /* figcaption stuff */
-    figure figcaption {
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
 
@@ -239,15 +23,22 @@
 <p class="double"></p>
 
 <div class="container">
-<form action="https://api.web3forms.com/submit" method="POST">
+  {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+  {% endif %}
+<form action="/input" method="POST">
 
     <input type="hidden" name="access_key" value="c08cbba3-8b05-4a01-b889-d7e6e29308b4">
 
     <label for="fname" style="color: white;">Email of Sender (Leave Blank if not applicable) </label>
     <input type="text" id="sname" name="email" placeholder="@gmail.com...">
 
-    <label for="lname" style="color: white;">Phone Number of Sender (Leave Blank if not applicable) </label>
-    <input type="text" id="dname" name="phonenumber" placeholder="(999)999-9999...">
+    <label for="lname" style="color: white;">Phone Number of Sender Including Country Code. (Leave Blank if not applicable) </label>
+    <input type="text" id="dname" name="phoneNumber" placeholder="+1 (999)999-9999...">
 
     <label for="state" style="color: white;">U.S. State of Origin (If Applicable, otherwise "Not from USA")</label>
     <select id="state" name="state">
@@ -306,7 +97,7 @@
     </select>
 
     <label for="subject" style="color: white;">Message Content</label>
-    <textarea id="subject" name="subject" placeholder="Content of the message you recieved (copy + paste).." style="height:200px"></textarea>
+    <textarea id="subject" name="message" placeholder="Content of the message you recieved (copy + paste).." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
@@ -317,7 +108,7 @@
 <p style="font-size: 5px; font-family: Times New Roman;"> Andrew Barber, Elijah Paul Castaneda, Scott Jeppson, USU, Sandbox - Hackathon, Spring 2025. </p>
 
 <div class="navbar">
-  <a href=""> Main Menu </a>
+  <a href="/"> Main Menu </a>
   <a href="/output"> See Results </a>
 </div>
 
