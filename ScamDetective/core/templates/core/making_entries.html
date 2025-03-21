@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body>
+    <h1>Submit Your Details</h1>
+    <form action="/secretPage" method="POST">
+        <label for="code">Code:</label>
+        <input type="text" id="code" name="code" required>
+        <br><br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>{{ code.code }} - {{ code.country }}</p>
+</body>
+</html>

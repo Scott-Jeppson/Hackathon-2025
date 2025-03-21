@@ -4,9 +4,13 @@ from django.db import models
 class Keyword(models.Model):
     id = models.AutoField(primary_key=True)
     body = models.CharField(max_length=100)
+    score = models.IntegerField()
 
     def __str__(self):
         return self.body
+    
+    def getScore(self):
+        return self.score
      
     def compare(self, text):
         return self.body in text
@@ -24,3 +28,17 @@ class Admin(models.Model):
     username = models.CharField(max_length=100)
     passwordHash = models.CharField(max_length=100)
     salt = models.CharField(max_length=100)
+
+class Phrase(models.Model):
+    id = models.AutoField(primary_key=True)
+    body = models.CharField(max_length=100)
+    score = models.IntegerField()
+
+    def __str__(self):
+        return self.body
+    
+    def getScore(self):
+        return self.score
+
+    def compare(self, text):
+        return self.body in text
