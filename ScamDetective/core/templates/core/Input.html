@@ -31,7 +31,7 @@
     </ul>
   {% endif %}
 <form action="/input" method="POST">
-
+    {% csrf_token %}
     <input type="hidden" name="access_key" value="c08cbba3-8b05-4a01-b889-d7e6e29308b4">
 
     <label for="fname" style="color: white;">Email of Sender (Leave Blank if not applicable) </label>

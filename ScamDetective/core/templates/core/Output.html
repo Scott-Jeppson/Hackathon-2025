@@ -23,7 +23,17 @@
 <p class="double"></p>
 
 <div class="container" align="center">
-<iframe src="https://whateverscottputshere" title="Scam Detective Results"></iframe>
+  <h2>Scam Detector Results</h2>
+  <p class="results">Here are the results of the scam detector:</p>
+  <p class="results">There is a {{ percentage }}% chance that this message is a scam</p>
+  <p class="results">This message was received from {{ source }}</p>
+  {% if phone %}
+    <p class="results">If you do have not been in this country within the past 3 months and do not know anyone who lives there, increase your scam chance by 50%</p>
+  {% else %}
+    <p class="results">If this email has a lot of random letters and numbers, increase the scam chance by 50%</p>
+  {% endif %}
+  <p class="results">If there are any misspellings or grammatical errors in the message, increase the scam chance by 20%</p>
+  <p class="results">If you are unsure, it is always best to be cautious and not respond to the message</p>
 </div>
 
 </form>
