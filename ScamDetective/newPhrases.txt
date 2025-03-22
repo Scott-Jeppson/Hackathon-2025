@@ -1,0 +1,161 @@
+"You've won a free prize!" 55
+
+"Congratulations! Claim your reward now." 60
+
+"Urgent: Your account has been compromised." 65
+
+"Click here to verify your identity." 50
+
+"Your payment is overdue. Act immediately." 58
+
+"Limited time offer! Act fast." 25
+
+"Dear customer, your bank account is locked." 62
+
+"Send us your details to receive your refund." 55
+
+"You have unclaimed funds waiting for you." 53
+
+"Verify your account to avoid suspension." 57
+
+"A friend sent you a special message!" 42
+
+"Earn money quickly with no effort!" 61
+
+"Exclusive investment opportunity!" 50
+
+"You have been selected for a special deal." 47
+
+"Your loan has been pre-approved." 49
+
+"We tried to contact you about your warranty." 28
+
+"Final notice: Claim your reward now!" 66
+
+"Act now! This offer expires soon." 48
+
+"Get rich fast with this simple trick!" 63
+
+"Your social security number has been flagged." 64
+
+"Immediate action required to restore access." 59
+
+"Reset your password immediately to secure your account." 54
+
+"Secret shopper opportunity available!" 46
+
+"Risk-free investment with guaranteed returns!" 60
+
+"Confirm your payment details to avoid service interruption." 58
+
+"This is the IRS. You owe back taxes. Pay now or face legal action." 67
+
+"Your driver's license will be suspended unless you act immediately." 65
+
+"You have unpaid tolls. Pay now to avoid a fine." 50
+
+"We have detected fraudulent activity on your bank account. Verify now." 62
+
+"This is the police. You have an outstanding warrant. Resolve it today." 68
+
+"Recover your lost funds! We can help you get your money back." 55
+
+"We caught the scammer who stole from you! Claim your reimbursement now." 58
+
+"Protect yourself from fraud! Sign up for our scam recovery program." 52
+
+"Immediate action needed: Your Medicare benefits are at risk." 60
+
+"Your package delivery has been delayed. Confirm details now." 27
+
+"Urgent: Your PayPal account is under review. Take action now." 53
+
+"Final notice: Your car insurance is about to lapse." 56
+
+"We have a job offer for you! Just provide your details." 26
+
+"Your bank needs additional verification. Click here." 55
+
+"Your computer is infected! Call support now." 62
+
+"A relative has left you an inheritance! Claim it now." 57
+
+"We detected suspicious activity. Secure your account now." 61
+
+"Act fast: Your health insurance plan is expiring soon!" 58
+
+"Get exclusive access to secret government grants!" 49
+
+"This is Amazon support. Your order has been flagged." 54
+
+"You have been overcharged! Claim your refund today." 56
+
+"We need confirmation to process your loan approval." 53
+
+"Your electricity bill is overdue. Avoid disconnection now!" 59
+
+"Exclusive crypto investment opportunity! Don't miss out." 50
+
+"Help us fight fraud! Report your bank details now." 60
+
+"You qualify for student loan forgiveness! Apply today." 55
+
+"Act now: Your Facebook account will be suspended!" 57
+
+"Your eBay account has been compromised. Verify details." 54
+
+"We found errors in your tax return. Immediate response needed." 63
+
+"Earn passive income with no investment required!" 50
+
+"Get your free credit score check now!" 24
+
+"Exclusive giveaway! Just pay a small shipping fee." 29
+
+"Confirm your personal details to claim your prize!" 51
+
+"Act fast: Your phone service is at risk of termination." 56
+
+"Final warning: Your bank account is locked!" 66
+
+"You are pre-approved for a special business loan!" 50
+
+"New government relief fund available! Apply now." 58
+
+"We noticed unusual transactions on your credit card." 59
+
+"Claim your free vacation package today!" 49
+
+"You must verify your Apple ID to avoid suspension." 54
+
+"Legal notice: Immediate payment required to avoid penalties." 61
+
+"Win big! Enter your details for a chance to win cash prizes." 52
+
+"Your WhatsApp account is at risk. Verify now!" 55
+
+"We need a small fee to process your lottery winnings." 60
+
+"Confirm your social security details to unlock benefits." 57
+
+"Your online banking session has been compromised!" 65
+
+"Time-sensitive offer! Upgrade your account today." 50
+
+"Pay a small fee now to claim your inheritance funds." 62
+
+"Don't miss out! Government financial aid ends soon." 58
+
+"Earn rewards just by completing a quick survey!" 22
+
+"Protect your account! Update your security settings now." 53
+
+"Your Cash App account has been locked! Unlock now." 56
+
+"We found an issue with your tax refund. Act fast." 64
+
+"Your cryptocurrency wallet has been frozen!" 59
+
+"Confirm your hotel booking details to avoid cancellation." 54
+
+"Your identity has been stolen! Secure your details now." 65

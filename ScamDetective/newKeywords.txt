@@ -1,0 +1,218 @@
+"IRS" 35
+
+"24" 30
+
+"hours" 28
+
+"toll" 33
+
+"cancel" 29
+
+"refund" 37
+
+"prize" 40
+
+"congratulations" 38
+
+"urgent" 45
+
+"account" 36
+
+"verify" 39
+
+"payment" 34
+
+"limited" 27
+
+"offer" 26
+
+"customer" 10
+
+"locked" 41
+
+"details" 10
+
+"funds" 33
+
+"suspension" 42
+
+"friend" 10
+
+"investment" 38
+
+"selected" 10
+
+"pre-approved" 35
+
+"warranty" 26
+
+"notice" 37
+
+"click" 30
+
+"social security" 44
+
+"restore" 10
+
+"password" 34
+
+"support" 10
+
+"opportunity" 32
+
+"guaranteed" 39
+
+"confirm" 37
+
+"police" 45
+
+"fraudulent" 40
+
+"warrant" 43
+
+"recover" 38
+
+"scammer" 36
+
+"fraud" 41
+
+"Medicare" 34
+
+"PayPal" 32
+
+"insurance" 33
+
+"job offer" 10
+
+"bank" 35
+
+"computer" 31
+
+"inheritance" 37
+
+"suspicious" 39
+
+"expired" 30
+
+"health" 10
+
+"grant" 27
+
+"Amazon" 10
+
+"overcharged" 35
+
+"loan" 33
+
+"electricity" 10
+
+"crypto" 38
+
+"forgiveness" 34
+
+"Facebook" 10
+
+"eBay" 10
+
+"tax" 36
+
+"passive income" 32
+
+"credit score" 10
+
+"giveaway" 31
+
+"termination" 40
+
+"business loan" 10
+
+"relief" 10
+
+"transactions" 36
+
+"vacation" 10
+
+"Apple ID" 33
+
+"legal" 37
+
+"lottery" 32
+
+"identity" 41
+
+"banking" 35
+
+"upgrade" 10
+
+"inheritance funds" 39
+
+"financial aid" 10
+
+"survey" 10
+
+"security" 33
+
+"Cash App" 30
+
+"frozen" 38
+
+"hotel" 10
+
+"stolen" 40
+
+"exclusive" 10
+
+"hot deal" 25
+
+"money-back" 31
+
+"limited supply" 28
+
+"restricted" 33
+
+"bonus" 10
+
+"wire transfer" 39
+
+"easy money" 37
+
+"transfer" 10
+
+"gift card" 32
+
+"double your money" 35
+
+"act now" 38
+
+"no risk" 29
+
+"one-time offer" 34
+
+"trial" 10
+
+"activate" 36
+
+"credentials" 33
+
+"urgent reply" 40
+
+"special promotion" 31
+
+"winning" 39
+
+"unusual activity" 35
+
+"login" 10
+
+"redeem" 10
+
+"code" 10
+
+"phone call" 10
+
+"compensation" 34
+
+"membership" 10
+
+"immediate response" 37
+

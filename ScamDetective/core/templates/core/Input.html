@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <figure>
-  <img src="./SD.Images/Scam Detective Logo.png" alt="Scam Detective Logo" width="4200" height="2400" class="center" style="width:50%; height:50%">
+  <img src="{% static 'Scam Detective Logo.png' %}" alt="Scam Detective Logo" width="4200" height="2400" class="center" style="width:50%; height:50%">
   <figcaption style="color: white";>Fig.1 - Scam Detective Logo.</figcaption>
 </figure>
 
@@ -22,15 +23,22 @@
 <p class="double"></p>
 
 <div class="container">
-<form action="https://api.web3forms.com/submit" method="POST">
-
+  {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+  {% endif %}
+<form action="/input" method="POST">
+    {% csrf_token %}
     <input type="hidden" name="access_key" value="c08cbba3-8b05-4a01-b889-d7e6e29308b4">
 
     <label for="fname" style="color: white;">Email of Sender (Leave Blank if not applicable) </label>
     <input type="text" id="sname" name="email" placeholder="@gmail.com...">
 
-    <label for="lname" style="color: white;">Phone Number of Sender (Leave Blank if not applicable) </label>
-    <input type="text" id="dname" name="phonenumber" placeholder="(999)999-9999...">
+    <label for="lname" style="color: white;">Phone Number of Sender Including Country Code. (Leave Blank if not applicable) </label>
+    <input type="text" id="dname" name="phoneNumber" placeholder="+1 (999)999-9999...">
 
     <label for="state" style="color: white;">U.S. State of Origin (If Applicable, otherwise "Not from USA")</label>
     <select id="state" name="state">
@@ -89,19 +97,19 @@
     </select>
 
     <label for="subject" style="color: white;">Message Content</label>
-    <textarea id="subject" name="subject" placeholder="Content of the message you recieved (copy + paste).." style="height:200px"></textarea>
+    <textarea id="subject" name="message" placeholder="Content of the message you recieved (copy + paste).." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input style="padding: 12px 20px;" type="submit" value="Submit">
   </form>
 </div>
 
 </form>
 
-<p style= font-size: 5px; font-family: Times New Roman;> Andrew Barber, Elijah Paul Castaneda, Scott Jeppson, USU, Sandbox - Hackathon, Spring 2025. </p>
+<p style="font-size: 5px; font-family: Times New Roman;"> Andrew Barber, Elijah Paul Castaneda, Scott Jeppson, USU, Sandbox - Hackathon, Spring 2025. </p>
 
 <div class="navbar">
-  <a href="index.htm"> Main Menu </a>
-  <a href="Output.html"> See Results </a>
+  <a href="/"> Main Menu </a>
+  <a href="/output"> See Results </a>
 </div>
 
 </body>
