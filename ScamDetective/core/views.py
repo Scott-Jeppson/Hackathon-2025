@@ -86,14 +86,3 @@ def output(request):
             'phone': phone,
             'source': source,
         })
-
-def secretPage(request):
-    if request.method == 'GET':
-        return render(request, 'core/making_entries.html', {
-            'code': CountryCode.objects.order_by('-id').first(),
-        })
-    elif request.method == 'POST':
-        code = request.POST['code']
-        country = request.POST['country']
-        countryCode = CountryCode.objects.create(country=country, code=code)
-        return redirect('/secretPage')
